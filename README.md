@@ -1,6 +1,6 @@
 # Vet clinic database: query and update animals table
 
-> In this part of the project, we inserted some more data to the "animals" table that is inside the vet_clinic database. We also used transactions to update and delete records from the table. Finally, we applied some aggregate functions and the GROUP BY statement to answer analytical questions (queries).
+> In this part of the project, we inserted some more data into the "animals" table that is inside the vet_clinic database. We also used transactions to update and delete records from the table. Finally, we applied some aggregate functions and the GROUP BY statement to answer analytical questions (queries).
 
 ## Getting Started
 
@@ -12,17 +12,17 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Results
 
-- Inside a transaction update the animals table by setting the species column to unspecified. Verify that change was made. Then roll back the change and verify that the species columns went back to the state before the transaction.
+- Inside a transaction update the animals' table by setting the species column to unspecified. Verify that change was made. Then roll back the change and verify that the species columns went back to the state before the transaction.
 ![screenshot](./images/transaction1.png)
 
 - Inside a transaction:
-  - Update the animals table by setting the species column to digimon for all animals that have a name ending in mon.
-  - Update the animals table by setting the species column to pokemon for all animals that don't have species already set.
+  - Update the animals' table by setting the species column to digimon for all animals that have a name ending in "mon".
+  - Update the animals' table by setting the species column to pokemon for all animals that don't have species already set.
   - Commit the transaction.
   - Verify that change was made and persists after commit.
   ![screenshot](./images/transaction2.png)
 
-  - *New session (changes persist after commit)*:
+  - *New session (changes persist after committing)*:
   ![screenshot](./images/transaction2_1.png)
 
 - Inside a transaction delete all records in the animals' table, then roll back the transaction. After the rollback verify if all records in the animals' table still exist.
@@ -34,11 +34,11 @@ This repository includes files with plain SQL that can be used to recreate a dat
   - Update all animals' weight to be their weight multiplied by -1.
   - Rollback to the savepoint.
   - Update all animals' weights that are negative to be their weight multiplied by -1.
-  - Commit transaction.
+  - Commit the transaction.
   ![screenshot](./images/transaction4.png)
   ![screenshot](./images/transaction4_1.png)
 
-  - *New session (changes persist after commit)*:
+  - *New session (changes persist after committing)*:
   ![screenshot](./images/transaction4_2.png)
 
 - Write queries to answer the following questions:

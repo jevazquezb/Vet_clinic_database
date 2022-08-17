@@ -1,6 +1,6 @@
-# Vet clinic database: query multiple tables
+# Vet clinic database
 
-> In this part of the project, we added some **many-to-many** relationships and wrote more complex queries to answer questions.
+> This is a relational database that hosts the data structure of a vet clinic.
 
 ## Getting Started
 
@@ -10,21 +10,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Use [data.sql](./data.sql) to populate tables with sample data.
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
-## Results
+## Schema
 
-- Write queries to answer the following:
-  - Who was the last animal seen by William Tatcher?
-  - How many different animals did Stephanie Mendez see?
-  - List all vets and their specialties, including vets with no specialties.
-  - List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
-  - What animal has the most visits to vets?
-  - Who was Maisy Smith's first visit?
-  - Details for most recent visit: animal information, vet information, and date of visit.
-  - How many visits were with a vet that did not specialize in that animal's species?
-  - What specialty should Maisy Smith consider getting? Look for the species she gets the most.
-  ![Scrennshot](./images/queries6.png)
-  ![Scrennshot](./images/queries7.png)
-  ![Scrennshot](./images/queries8.png)
+  ![DBschema](./images/db_schema.png)
 
 ## Authors
 
